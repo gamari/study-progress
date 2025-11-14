@@ -11,6 +11,21 @@
 4. AI ツールは指定された Notion 内の内容を読み込み、プロンプトの一部として活用したり、リアルタイムにコンテキスト参照を行ったりできます。
 5. 要件・設計・ドキュメントが更新されれば、AI ツールも最新の内容を参照できるよう設計することで、より正確・最新の支援が可能になります。
 
+## VSCodeの設定手順
+
+- Notionの設定
+  - Integrationを作成
+  - Integrationに対して接続できるDBを追加していく
+- VSCodeの設定
+  - ctrl + shift + p
+  - MCP: Add Server...を選択
+  - NPM Packageを選択
+  - @notionhq/notion-mcp-server
+  - mcp.json内で「OPENAPI_MCP_HEADERS」をIntegrationのものに指定
+  - Agent内のリロードボタンを押下
+  - Add Contextで「Notion API」を指定してあげる
+  - 接続できることを確認
+
 
 ## メモ
 
